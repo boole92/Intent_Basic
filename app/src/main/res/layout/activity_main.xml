@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    //배운것들
+    //width와 height값을 0으로 주면 남은 영역을 다 채운다.
+    //layout_wight를 1로 주면 다른 위젯이 차지하고
+    남은 영역을 다 채운다.
+    //텍스트나 힌트같은 텍스트가 들어가는 영역은 리소스로 빼는 게 정석이다
+    //onClick속성으로 클릭 메소드를 만들 수 있다.
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_message"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendbutton"
+        android:text="@string/button_send"/>
+
+
+</LinearLayout>
